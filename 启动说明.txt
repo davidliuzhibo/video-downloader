@@ -1,0 +1,55 @@
+# 如何启动视频下载器
+
+由于中文编码问题，请使用以下方式启动：
+
+## 方法一：图形界面版本（推荐）
+
+### 选项 1：双击批处理文件
+双击运行: **start_gui.bat**
+
+### 选项 2：命令行启动
+```bash
+python video_downloader_gui.py
+```
+
+## 方法二：命令行版本
+
+### 直接使用 Python
+```bash
+python video_downloader.py <视频链接>
+```
+
+### 使用批处理文件
+```bash
+start_download.bat <视频链接>
+```
+
+## 使用示例
+
+### 下载 YouTube 视频
+```bash
+python video_downloader.py https://www.youtube.com/watch?v=xxxxx
+```
+
+### 下载 Bilibili 视频
+```bash
+python video_downloader.py https://www.bilibili.com/video/BVxxxxx
+```
+
+### 指定输出目录和质量
+```bash
+python video_downloader.py https://www.youtube.com/watch?v=xxxxx -o D:\Videos -q 1080p
+```
+
+## 文件说明
+
+- **start_gui.bat** - 启动图形界面（无中文，避免编码问题）
+- **start_download.bat** - 命令行下载（需要提供视频链接）
+- **video_downloader_gui.py** - 图形界面程序源码
+- **video_downloader.py** - 命令行程序源码
+
+## 如果遇到问题
+
+1. 确保已安装依赖：`pip install yt-dlp`
+2. 确保 Python 在系统 PATH 中
+3. 查看详细说明：README.md 或 使用指南.md
